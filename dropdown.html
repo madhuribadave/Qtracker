@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+        <form align=center>
+        	<label>UNIVERSITY</label>
+        	<br><br>
+        	<select id="drop-uni">
+        		<option disabled selected>CHOOSE YOUR UNIVERSITY</option>
+        		<option>SAPPU</option>
+        		<option>DBATU</option>
+        		<option>SGBAU</option>
+        		<option>PTU</option>
+        	</select>
+        	<button type="button" onclick="submitdata()">SUBMIT</button>
+        </form>
+        <script type="text/javascript">
+        	function submitdata(){
+        		let uni=document.getElementById("drop-uni").value;
+        		if (uni=="CHOOSE YOUR UNIVERSITY") {
+        			alert("you have select one option");
+        		}
+        		else
+        		{
+        			console.log(uni)
+        		}
+        	}
+        </script>
+</body>
+</html>
